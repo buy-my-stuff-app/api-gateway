@@ -1,9 +1,28 @@
-var express = require('express');
-var router = express.Router();
+/** Root routes
+ * @module routes
+ */
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+/**
+ * @type {object}
+ * @description Route /
+ * @const
+ * @namespace /
+ */
+const router = require('express').Router();
+
+/**
+ * @name Access denied
+ * @description Indicates that the access is denied
+ * @memberof module:routes~/
+ * @path {GET} /not-authorized
+ * @code {403} Access denied
+ * @response {Object} 403:
+ * @response {string} message Response message
+ */
+router.get('/not-authorized', (req, res) => {
+  return res.status(403).json({
+    message: 'Access denied',
+  });
 });
 
 module.exports = router;

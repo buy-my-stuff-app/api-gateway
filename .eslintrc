@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "plugins": [
+    "prettier",
+    "mocha"
+  ],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:mocha/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "settings": {},
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "prettier/prettier": "off",
+    "no-unused-vars": "warn"
+  }
+}
