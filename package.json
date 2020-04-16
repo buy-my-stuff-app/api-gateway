@@ -8,6 +8,7 @@
     "preinstall": "npm run check-package-manager --silent",
     "start-dev": "nodemon ./src/app.js",
     "start": "cross-env NODE_ENV=production node ./src/app.js",
+    "test-unit-ci": "cross-env NODE_ENV=test-unit mocha test/unit/**/*.test.js --once",
     "test-unit": "cross-env NODE_ENV=test-unit mocha test/unit/**/*.test.js --watch",
     "test-integration": "cross-env NODE_ENV=test-integration mocha test/integration/**/*.test.js --watch"
   },
