@@ -37,7 +37,7 @@
     "husky": "^4.2.5",
     "jsdoc": "^3.6.4",
     "jsdoc-http-plugin": "^0.3.2",
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "nodemon": "^2.0.3",
     "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1",
